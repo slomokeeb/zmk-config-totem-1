@@ -32,16 +32,36 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        combo_v {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <21 22>;
+            bindings = <&kp V>;
         };
 
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
+        combo_k {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp K>;
+        };
+
+        combo_m {
+            bindings = <&kp M>;
+            key-positions = <6 7>;
+        };
+
+        combo_j {
+            bindings = <&kp J>;
+            key-positions = <6 8>;
+        };
+
+        combo-g {
+            bindings = <&kp G>;
+            key-positions = <3 2>;
+        };
+
+        combo-b {
+            bindings = <&kp B>;
+            key-positions = <1 3>;
         };
     };
 
