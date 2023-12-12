@@ -111,6 +111,15 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+        layer_4 {
+            bindings = <
+           &kp Q  &kp W  &kp E   &kp R       &kp T         &kp Y      &kp I   &kp O      &kp P     &kp BSPC
+           &kp A  &kp S  &kp D   &kp F       &kp G         &kp H      &kp K   &kp L      &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V       &kp B         &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RET
+                         &trans  &bt BT_NXT  &bt BT_CLR    &kp SPACE  &trans  &trans
+            >;
+        };
+
         base_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -131,11 +140,9 @@
          &kp Q               &kp W                 &kp F             &kp P             &kp B             &kp J        &kp L              &kp U              &kp Y                  &kp SEMICOLON
          &hm_l LEFT_SHIFT A  &hm_l LEFT_CONTROL R  &hm_l LEFT_ALT S  &hm_l LEFT_GUI T  &kp G             &kp M        &hm_r RIGHT_GUI N  &hm_r RIGHT_ALT E  &hm_r RIGHT_CONTROL I  &hm_r RIGHT_SHIFT O
 &kp DEL  &kp Z               &kp X                 &kp C             &kp D             &kp V             &kp K        &kp H              &kp COMMA          &kp DOT                &kp FSLH             &kp BSLH
-                                                   &kp DEL           &lt 1 SPACE       &sk LEFT_SHIFT    &lt 3 ENTER  &lt 2 BACKSPACE    &kp TAB
+                                                   &kp DEL           &lt 2 SPACE       &sk LEFT_SHIFT    &lt 4 ENTER  &lt 3 BACKSPACE    &kp TAB
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -161,8 +168,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         sim_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -186,8 +191,6 @@
                                &trans        &trans        &trans        &trans      &trans        &trans
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
